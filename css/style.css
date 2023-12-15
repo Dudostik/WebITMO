@@ -168,15 +168,16 @@ body{
 	flex-direction: column;
 }
 
-.about__ads {
+.about__coolblock {
 	padding: 12px 20px;
 }
 
-.about__adsitem img {
+.about__coolitem img {
 	margin: 0 0 12px 0;
 	max-width: 100%;
 	border: 1px solid #4d1108;
 	border-radius: 5px;
+	box-shadow: 0 4px 12px #000;
 }
 
 .about__mainpart {
@@ -187,10 +188,13 @@ body{
 	border-bottom: 1px solid #fff;
 }
 
-.about__text {
+.about__text { 
+	font-style: italic;
 	padding: 20px;
 	font-size: 14px;
 	line-height: 24px;
+	text-indent: 5%;
+	word-spacing: 1rem; 
 	flex: 1 1 auto;
 }
 
@@ -216,6 +220,12 @@ body{
 	background-color: #fff;
 }
 
+.about__btn:hover{
+	color: #fff;
+	background-color: #4d1108;
+	box-shadow: 0 5px 2px #000;
+}
+
 .btn {
 	display: block;
 	max-height: 40px;
@@ -223,6 +233,7 @@ body{
 	text-align: center;
 	border-radius: 5px;
 	font-size: 1.125rem;
+	box-shadow: 0 7px 2px #000;
 }
 
 .about__someRafsIdk {
@@ -236,6 +247,14 @@ body{
 
 .about__someRafsIdk li {
 	margin: 0 0 12px 0;
+}
+
+.about__someRafsIdk li:hover {
+	text-decoration: underline;
+}
+
+.about__someRafsIdk li:last-child {
+	text-decoration: line-through;
 }
 
 @media (max-width:992px) {
@@ -349,6 +368,16 @@ body{
 	background-color: #4d1108;
 }
 
+.gallery__btn:hover{
+	color:  #4d1108;
+	background-color: #f5f5f5;
+	box-shadow: 0 5px 2px #000;
+}
+
+.btn:active{
+	box-shadow: 0 1px 2px #000;
+}
+
 @media (max-width:992px) {
 	.gallery__row {
 		flex-wrap: wrap;
@@ -368,6 +397,7 @@ body{
     minmax(60px, 1fr)
     minmax(60px, 1.67fr)
     minmax(60px, 1.67fr);
+    grid-template-rows: auto 4.5em auto 4.5em;
 }
 
 thead, tbody, .grid-table-tr {
@@ -398,12 +428,14 @@ thead, tbody, .grid-table-tr {
 
 .grid-table-tr:nth-child(even) td {
     background: #f5f5f5;
+    grid-template-rows: minmax(30px, 1.67fr);; 
 }
 
 /*---------FOOTER---------*/
 
 .footer {
 	background-color: #f5f5f5;
+	text-align: center;
 }
 
 .footer__row {
