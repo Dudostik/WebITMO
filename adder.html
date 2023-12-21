@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+	   <title>adder</title>
+	   <meta charset="utf-8"> 
+	   <link rel="stylesheet" href="css/style.css">
+	   <meta name="keywords" content="игры, игровой, блог, ключевые слова">
+	   <meta name="description" content="блог про игры, игровой блог">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	   <script src="js/script.js"></script>
+	   <script src="js/script_table.js"></script>
+   </head>
+   <body>
+   	<div class="wrapper">
+      	<div class="content content_adder">
+   	      <header class="header">
+				   <div class="header__container container">
+				   	<a href="index.html" class="header__logo">
+						   <img src="img/header/logo.png" alt="">
+				      </a>
+				      <div class="header__menu menu">
+				         <nav class="menu__body">
+				   		   <ul class="menu__list">
+				   			   <li><a href="index.html" class="menu__link">ABOUT</a></li>
+				  				   <li><a href="reviews.html" class="menu__link">REVIEWS</a></li>
+				  				   <li><a href="adder.html" class="menu__link active">ADD REVIEW</a></li>
+				  				   <li><a href="users.html" class="menu__link">USERS</a></li>
+				  				   <li><a href="flanders.html" class="menu__link">FLANDERS</a></li>
+	   			         </ul>
+	   		         </nav>
+	   	         </div>
+	   	      </div>
+	         </header>
+	         <div class="adder">
+	         	<div class="container">
+	         		<div class="title title_underline">New review</div>
+	         	   <div class="adder__row">
+	         		   <div class="adder__column">
+	         		   	<form id="characteristicsForm">
+                           <label for="comfort">Comfort:</label>
+                           <input type="number" min="0" min="100" id="comfort" name="comfort" required>
+                           <label for="cushioning">Cushioning:</label>
+                           <input type="number" min="0" min="100" id="cushioning" name="cushioning" required>
+                           <label for="traction">Traction:</label>
+                           <input type="number" min="0" min="100" id="traction" name="traction" required>
+                           <label for="materials">Materials:</label>
+                           <input type="number" min="0" min="100" id="materials" name="materials" required>
+                           <label for="safety">Safety:</label>
+                           <input type="number" min="0" min="100" id="safety" name="safety" required>
+                           <input type="submit" value="Добавить">
+                        </form>
+                     </div>
+                     <div class="adder__column">
+                        <div id="characteristicsList">
+                           <table id="ch_table_head"><tr><th>Comfort</th><th>Cushioning</th><th>Traction</th><th>Materials</th><th>Safety</th></tr>
+       	                     <template id="characteristicsTemplate">
+       		                     <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                 </tr>
+                              </template>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+	      </div>
+	      <footer class="footer footer_adder" id="contacts">
+	      	<div class="container">
+	      		<div class="footer__row">
+	      			<div class="footer__text">
+	      				<a href="">Dudostik 2023</a>
+	      				<p id="loadTime"></p>
+	      			</div>
+	      		</div>
+	      	</div>
+         </footer>
+	   </div>
+   </body>
+</html>   

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+	   <title>KicksTesters</title>
+	   <meta charset="utf-8"> 
+	   <link rel="stylesheet" href="css/style.css">
+	   <meta name="keywords" content="кроссовки, блог, баскетбольные, ключевые слова">
+	   <meta name="description" content="блог про баскетбольные кроссовки, обзоры">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	   <script src="js/script.js"></script>
+	   <script src="js/script_users.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+      	<div class="content">
+      		<header class="header">
+				   <div class="header__container container">
+				   	<a href="index.html" class="header__logo">
+						   <img src="img/header/logo.png" alt="">
+				      </a>
+				      <div class="header__menu menu">
+				         <nav class="menu__body">
+				   		   <ul class="menu__list">
+				   			   <li><a href="index.html" class="menu__link">ABOUT</a></li>
+				  				   <li><a href="reviews.html" class="menu__link">REVIEWS</a></li>
+				  				   <li><a href="adder.html" class="menu__link">ADD REVIEW</a></li>
+				  				   <li><a href="users.html" class="menu__link active">USERS</a></li>
+				  				   <li><a href="flanders.html" class="menu__link">FLANDERS</a></li>
+	   			         </ul>
+	   		         </nav>
+	   	         </div>
+	   	      </div>
+	         </header>
+	         <div class="users">
+	         	<div class="container">
+	         		<div class="title title_underline">Users</div>
+                  <a href="#" id="users__btn" class="btn">Получить список пользователей</a> 
+                  <div class="users__title">Список пользователей:</div>
+                  <ul id="dataList"></ul>
+                  <div id="loadingIndicator">
+                     <div class="loader"></div>
+                  </div>
+               </div>
+            </div>
+	      </div>
+	      <footer class="footer" id="contacts">
+	      	<div class="container">
+	      		<div class="footer__row">
+	      			<div class="footer__text">
+	      				<a href="">Dudostik 2023</a>
+	      				<p id="loadTime"></p>
+	      			</div>
+	      		</div>
+	      	</div>
+         </footer>
+	   </div>
+	</body>
+</html>

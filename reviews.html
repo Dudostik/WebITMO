@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
    <head>
-	   <title>games</title>
+	   <title>reviews</title>
 	   <meta charset="utf-8"> 
 	   <link rel="stylesheet" href="css/style.css">
-	   <meta name="keywords" content="игры, игровой, блог, ключевые слова">
-	   <meta name="description" content="блог про игры, игровой блог">
+	   <meta name="keywords" content="кроссовки, блог, баскетбольные, ключевые слова">
+	   <meta name="description" content="блог про баскетбольные кроссовки, обзоры">
 	   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	   <script src="js/script.js"></script>
    </head>
@@ -22,7 +22,9 @@
 				   		   <ul class="menu__list">
 				   			   <li><a href="index.html" class="menu__link">ABOUT</a></li>
 				  				   <li><a href="reviews.html" class="menu__link active">REVIEWS</a></li>
-				  				   <li><a href="#contacts" class="menu__link">CONTACTS</a></li>
+				  				   <li><a href="adder.html" class="menu__link">ADD REVIEW</a></li>
+				  				   <li><a href="users.html" class="menu__link">USERS</a></li>
+				  				   <li><a href="flanders.html" class="menu__link">FLANDERS</a></li>
 	   			         </ul>
 	   		         </nav>
 	   	         </div>
@@ -30,7 +32,7 @@
 	         </header>
    	      <div class="gallery" id="reviews">
 	         	<div class="container">
-	         		<div class="gallery__title title">REVIEWS</div>
+	         		<div class="title title_underline">REVIEWS</div>
 	         		<div class="gallery__row">
 	         			<div class="gallery__collumn">
 	         				<div class="columns__item item">
@@ -39,7 +41,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -52,7 +54,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -65,7 +67,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -78,7 +80,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -91,7 +93,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -104,7 +106,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -117,7 +119,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -130,7 +132,7 @@
 	         							<img src="img/gallery/img.jpg" alt="">
 	         						</div>
 	         						<div class="item__body">
-	         							<div class="item__title">Game name</div>
+	         							<div class="item__title">Model name</div>
 	         							<div class="item__text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ex aut adipisci architecto, tempore cupiditate ea eveniet at tenetur corporis.</div>
 	         						</div>
 	         					</div>
@@ -140,13 +142,17 @@
 	         		<a href="index.html" class="gallery__btn btn">MAIN PAGE</a> 
 	         	</div>
 	         </div>
-	      </div> 
-	   </div>
-	      <footer class="footer">
-	      	<div class="footer__row">
-	      		<p id="loadTime"></p>
+	      </div>
+	      <footer class="footer" id="contacts">
+	      	<div class="container">
+	      		<div class="footer__row">
+	      			<div class="footer__text">
+	      				<a href="">Dudostik 2023</a>
+	      				<p id="loadTime"></p>
+	      			</div>
+	      		</div>
 	      	</div>
-	      </footer>
-	   </div>
+         </footer>
+      </div>
    </body>
 </html>
