@@ -235,6 +235,7 @@ body{
 	border-radius: 5px;
 	font-size: 1.125rem;
 	box-shadow: 0 7px 2px #000;
+	overflow: hidden; 
 }
 
 .about__someRafsIdk {
@@ -260,6 +261,11 @@ body{
 
 @media (max-width:992px) {
 	.about__row {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.adder__row {
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
@@ -469,14 +475,9 @@ label {
 #loadingIndicator {
     width: 200px;
     height: 200px;
-    /* position: fixed; */
-    /* justify-content: center;
-    align-items: center; */
-    /* position: fixed; */
     margin: 0px auto;
     padding: 30px;
     display: none;
-    /* z-index: 1; */
 }
 
 .loader {

@@ -63,12 +63,14 @@ window.addEventListener("load", function() {
             let traction_val = characteristicsList[i].traction;
             let materials_val = characteristicsList[i].materials;
             let safety_val = characteristicsList[i].safety;
+            let result_val = (Number(comfort_val) + Number(cushioning_val) + Number(traction_val) + Number(materials_val) + Number(safety_val))/5;
 
             td[0].textContent  = comfort_val;
             td[1].textContent  = cushioning_val;
             td[2].textContent  = traction_val;
             td[3].textContent  = materials_val;
             td[4].textContent  = safety_val;
+            td[5].textContent = result_val;
 
             table.appendChild(сlonedNode);
 

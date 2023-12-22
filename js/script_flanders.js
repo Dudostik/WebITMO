@@ -1,17 +1,18 @@
 (function() {
   window.addEventListener('load', function() {
-    //создаем объект пагинатора
+    //создаём экземпляр Swiper и применяем его к mySwiper
     var swiper = new Swiper(".mySwiper", {
-      // тип пагинации
+      // Этот слайдер будет иметь пагинацию в виде прогресс-бара
       pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
       },
-      // тип навигации по страницам 
+      // навигация с кнопками "вперёд", "назад"
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      // поддержка прокрутки колёсиком мыши
       mousewheel: {
         sensitivity: 0.1,
       }
