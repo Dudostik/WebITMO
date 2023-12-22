@@ -5,6 +5,8 @@ window.addEventListener("load", function() {
     let table = document.getElementById('ch_table_head');
     let template = document.getElementById('characteristicsTemplate');
 
+    displayCharacteristics();
+
 // Получение данных из формы и добавление в список
     function addCharacteristics(event) {
         event.preventDefault();
@@ -73,7 +75,6 @@ window.addEventListener("load", function() {
             td[5].textContent = result_val;
 
             table.appendChild(сlonedNode);
-
         }
     }
 

@@ -299,6 +299,26 @@ body{
 	.block__element_3 {
 		order: 3;
 	}
+
+	.block__element_4 {
+		margin: 0 auto; 
+		order: 2;
+	}
+
+	.block__element_5 {
+		margin: 0 auto; 
+		order: 1;
+	}
+}
+
+@media (max-width:505px) {
+	.block__element_4 {
+		margin: 0 -50px; 
+	}
+
+	.block__element_5 {
+		margin: 0 -50px; 
+	}
 }
 
 /*---------GALLERY---------*/
